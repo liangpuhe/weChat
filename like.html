@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Like</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/iconfont.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-toggle collapsed pull-left"  style="background-color: #7DD5C9; height: 50px; width: 50px; padding: 3px 3px 3px 8px" aria-expanded="false" aria-controls="navbar">
+            <span class="icon iconfont icon-like" aria-hidden="true"></span>
+          </div>
+        <div class="navbar-toggle collapsed"  style="height: 50px; width: 50px; padding: 3px 3px 3px 0px; border: none" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="icon iconfont icon-rank" aria-hidden="true">
+        </div>
+
+         <button type="button" class="navbar-toggle mg-navbar-text" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          查看排名
+        </button>
+          <a class="navbar-brand">点赞排名</a>
+        </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" style="margin-top: 0px">
+            <li><a href="#">1234 作品1</a></li>
+            <li><a href="#about">1234 作品2</a></li>
+            <li><a href="#contact">1234 作品3</a></li>
+            <li><a href="#contact">1234 作品4</a></li>
+            <li><a href="#contact">1234 作品5</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="mg-votes" style="height: 100%; width: 100%">
+      <img src="img/vote.jpg" style="width: 100%; width: 100%; position: absolute" />
+      <p class="mg-vote" id="mg-103">11</p>
+      <p class="mg-vote" id="mg-101">12</p>
+      <p class="mg-vote" id="mg-105">13</p>
+      <p class="mg-vote" id="mg-106">21</p>
+      <p class="mg-vote" id="mg-104">22</p>
+      <p class="mg-vote" id="mg-111">31</p>
+      <p class="mg-vote" id="mg-107">32</p>
+      <p class="mg-vote" id="mg-112">33</p>
+      <p class="mg-vote" id="mg-110">41</p>
+      <p class="mg-vote" id="mg-102">42</p>
+      <p class="mg-vote" id="mg-108">51</p>
+      <p class="mg-vote" id="mg-109">52</p>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var percentA = 0.21;
+      var percentB = 0.3;
+      var percentC = 0.37;
+      var percentD = 0.44;
+      var percentE = 0.51;
+      var width = window.screen.availWidth;
+      document.getElementById("mg-103").style.top=percentA*711.5*width/400+"px";
+      document.getElementById("mg-101").style.top=percentA*711.5*width/400+"px";
+      document.getElementById("mg-105").style.top=percentA*711.5*width/400+"px";
+      document.getElementById("mg-106").style.top=percentB*711.5*width/400+"px";
+      document.getElementById("mg-104").style.top=percentB*711.5*width/400+"px";
+      document.getElementById("mg-111").style.top=percentC*711.5*width/400+"px";
+      document.getElementById("mg-107").style.top=percentC*711.5*width/400+"px";
+      document.getElementById("mg-112").style.top=percentC*711.5*width/400+"px";
+      document.getElementById("mg-110").style.top=percentD*711.5*width/400+"px";
+      document.getElementById("mg-102").style.top=percentD*711.5*width/400+"px";
+      document.getElementById("mg-108").style.top=percentE*711.5*width/400+"px";
+      document.getElementById("mg-109").style.top=percentE*711.5*width/400+"px";
+    </script>
+  </body>
+</html>

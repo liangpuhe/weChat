@@ -1,0 +1,115 @@
+.mg-navbar-text {
+  margin: 5px 0px 5px 5px !important;
+  border: none !important;
+  color: #5e5e5e;
+  background-color: none;
+}
+
+.mg-navbar-second {
+  margin: 25px 0 0 0 !important;
+}
+
+.mg-item>.list-group-item-heading {
+  font-weight: 300px;
+  font-size: 17px;
+}
+
+.mg-item>.list-group-item-text {
+  font-weight: 300px !important;
+  font-size: 12px !important;
+  position: absolute;
+  bottom: 3px;
+  left: 76px;
+  /*margin: 25px 0 0 0 !important;*/
+}
+.mg-item>.icon {
+  position: absolute;
+  bottom: 3px;
+  right: 8px;
+  /*margin: 25px 0 0 0 !important;*/
+}
+
+.mg-item>img {
+  margin: 0 10px 0 0;
+  width: 56px;
+  height: 56px;
+}
+
+.mg-item {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  height: 75px;
+}
+
+.mg-img-wall {
+  background-color: #D9D9D9;
+}
+
+.mg-detail-body{
+  padding: 0 !important;
+  background-color: #eee !important;
+}
+
+.mg-detail-header {
+  font-weight: 300px !important;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.mg-detail-header>small {
+  font-size: 60%;
+}
+.mg-detail-text>p {
+  font-size: 16px !important;
+}
+
+.mg-cardboard {
+  border: none;
+  padding: 15px 11px 3px 8px;
+  color: #939393;
+}
+.mg-votes {
+}
+
+.mg-vote {
+  position: absolute;
+  z-index: 2;
+}
+
+#mg-101 {
+  left: 46.5%;
+}
+#mg-102 {
+  left: 55.5%;
+}
+#mg-103 {
+  left: 22.5%;
+
+}
+#mg-104 {
+  left: 51%;
+}
+#mg-105 {
+  left: 81%;
+}
+#mg-106 {
+  left: 33.5%;
+}
+#mg-107 {
+  left: 42.5%;
+}
+#mg-108 {
+  left: 40%;
+}
+#mg-109 {
+  left: 60.5%;
+}
+#mg-110 {
+  left: 26%;
+}
+#mg-111 {
+  left: 14.5%;
+}
+#mg-112 {
+  left: 72.5%;
+}
