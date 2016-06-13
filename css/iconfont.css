@@ -17,7 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 .icon-content:before { content: "\e911"; }
-.icon-unie658:before { content: "\e8c1"; }
+.icon-layout:before { content: "\e8c1"; }
 .icon-like:before { content: "\e889"; }
 .icon-location:before { content: "\e75c"; color: #fa867c }
 .icon-rank:before { content: "\e77b"; }
