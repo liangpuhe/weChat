@@ -37,44 +37,11 @@
           <a class="navbar-brand">兴趣点</a>
         </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li><a href="../navbar-static-top/">Static top</a></li>
-            <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
     </nav>
 
-    <div class="container">
+    <div class="mg-img-full" id="mg-location">
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
+      <img src="img/map.png"/>
 
     </div> <!-- /container -->
 
@@ -89,8 +56,22 @@
     <script>
     var thisURL = document.URL;
     var  getval =thisURL.split('?')[1];
-    var showval= getval.split("=")[1];
-    alert(showval);
+    var hearts= getval.split("C");
+    alert(hearts);
+    var location;
+
+    var dataLocation = [{"code":101,"location":"smlhx"},{"code":102,"location":"smqxy"},{"code":103,"location":"smxeh"},{"code":104,"location":"smzyl"},{"code":105,"location":"smzzy"},{"code":106,"location":"smxeh"},{"code":107,"location":"smljh"},{"code":108,"location":"smzsy"},{"code":109,"location":"smxyl"},{"code":110,"location":"smljf"},{"code":111,"location":"smzjq"},{"code":112,"location":"smlhb"},{"code":201,"location":"hjdjy"},{"code":202,"location":"hjyyh"},{"code":203,"location":"hjtjr"},{"code":204,"location":"hjlcy"},{"code":205,"location":"hjzyn"},{"code":206,"location":"hjzyn"},{"code":207,"location":"hjlk"},{"code":208,"location":"hjzhd"},{"code":209,"location":"hjtry"},{"code":210,"location":"hjtry"},{"code":211,"location":"hjtry"},{"code":212,"location":"hjtry"},{"code":213,"location":"hjzyy"},{"code":214,"location":"hjzyy"},{"code":215,"location":"hjzyy"},{"code":216,"location":"hjqq"},{"code":217,"location":"hjqq"},{"code":218,"location":"hjgxe"},{"code":219,"location":"hjgxe"},{"code":220,"location":"hjsxw"},{"code":221,"location":"hjsxw"},{"code":222,"location":"hjlyl"},{"code":223,"location":"hjzyx"},{"code":224,"location":"hjldz"},{"code":225,"location":"hjmd"},{"code":301,"location":"gsljr"},{"code":302,"location":"gsztt"},{"code":303,"location":"gskr"},{"code":304,"location":"gskr"},{"code":305,"location":"gskr"},{"code":306,"location":"gsyyl"},{"code":307,"location":"gswxd"},{"code":308,"location":"gsyyl"},{"code":309,"location":"gswxd"},{"code":310,"location":"gszyx"},{"code":311,"location":"gszyx"},{"code":312,"location":"gspyf"},{"code":313,"location":"gsrlt"},{"code":314,"location":"gsjth"},{"code":315,"location":"gsrlt"},{"code":316,"location":"gsyyl"},{"code":317,"location":"gsltt"},{"code":318,"location":"gsyjw"},{"code":319,"location":"gsyjw"},{"code":320,"location":"gswjy"},{"code":321,"location":"gszwt"},{"code":322,"location":"gshsoh"},{"code":323,"location":"gsych"},{"code":324,"location":"gshsoh"},{"code":325,"location":"gslc"},{"code":326,"location":"gslc"},{"code":327,"location":"gslc"},{"code":328,"location":"gspyf"},{"code":329,"location":"gsrlt"},{"code":330,"location":"gsych"},{"code":331,"location":"gszwt"},{"code":401,"location":"gsylx"},{"code":402,"location":"gsyy"},{"code":403,"location":"pmchxy"},{"code":404,"location":"pmdq"},{"code":405,"location":"pmbjy"},{"code":406,"location":"gsdy"},{"code":407,"location":"pmlyj"},{"code":408,"location":"pmmsy"},{"code":409,"location":"pmcxy"},{"code":410,"location":"pmdsh"},{"code":411,"location":"pmsqc"},{"code":412,"location":"pmxy"},{"code":413,"location":"pmsw"},{"code":414,"location":"gswyz"},{"code":415,"location":"pmyby"}];
+    for(var i=0; i<dataLocation.length; i++){
+      for(var j=1; j<hearts.length; j++)
+      {
+        var tem = "" + dataLocation[i].code;
+        if(tem === hearts[j]){
+          location = "location/" + dataLocation[i].location + ".png";
+          $("#mg-location").append("<img src='" + location + "'/>");
+        }
+      }
+
+    };
     </script>
   </body>
 </html>

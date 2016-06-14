@@ -35,12 +35,11 @@
           <div class="navbar-toggle collapsed pull-left"  style="background-color: #7DD5C9; height: 50px; width: 50px; padding: 3px 3px 3px 8px" aria-expanded="false" aria-controls="navbar">
             <span class="icon iconfont icon-content" aria-hidden="true"></span>
           </div>
-        <a href="interest.html"><div class="navbar-toggle collapsed"  style="height: 50px; width: 50px; padding: 3px 3px 3px 0px; border: none" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <div class="navbar-toggle collapsed"  style="height: 50px; width: 50px; padding: 3px 3px 3px 0px; border: none" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <!-- <span class="icon iconfont icon-content" aria-hidden="true"></span> -->
           <img src="img/icon-map.jpg" style="height: 25px; margin-top: 5px"/>
         </div>
-        </a>
-         <button type="button" onclick="" class="navbar-toggle mg-navbar-text" aria-expanded="false">
+         <button type="button" onclick="sendHearts()" class="navbar-toggle mg-navbar-text" aria-expanded="false">
           兴趣点
         </button>
           <a class="navbar-brand">内容预览</a>
@@ -89,10 +88,7 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-      $(".icon-heart").click(function(){
-        $(this).toggleClass("red-heart");
-        return false;
-      });
+
     </script>
     <script>
     //从本页面 获取数据
@@ -208,9 +204,28 @@
     function sendCode(clicked_id) {
       // alert(clicked_id);
       var url = "detail.html?code=" + clicked_id;
+      var winobj = window.open(url,"_self");
+      winobj.location.href = url;
+    }
+    var arr=[];
+    var con="";
+    function sendHearts(){
+      var hearts = document.getElementsByClassName("hearts");
+      for (var i=0; i < hearts.length; i++){
+        con = con + hearts[i].getAttribute("id");;
+      }
+      alert(con);
+      var url = "interest.html?" + con;
       var winobj = window.open(url, "_blank");
       winobj.location.href = url;
     }
+
+    var j=1;
+    $(".icon-heart").click(function(){
+      $(this).toggleClass("red-heart");
+      $(this.parentElement).toggleClass("hearts");
+      return false;
+    });
     </script>
     <script>
     </script>
